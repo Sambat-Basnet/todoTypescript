@@ -1,3 +1,167 @@
-h1{
-  color: black;
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;500;600;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+  font-family: 'Raleway', sans-serif;
+}
+.main{
+  height: 100vh;
+  background: url('./assets/backimage.jpeg');
+  background-size: cover;
+  display: flex;
+  align-items: center;
+}
+.container-1{
+  background-color: #3c424a;
+  width: 30%;
+  margin: auto;
+  height: 80%;
+  color: #e1eaf2;
+  border-radius: 10px;
+  box-shadow: -2px 11px 43px -2px rgba(35,18,64,0.75);
+-webkit-box-shadow: -2px 11px 43px -2px rgba(35,18,64,0.75);
+-moz-box-shadow: -2px 11px 43px -2px rgba(35,18,64,0.75);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.dateSection{
+  /* background-color: red; */
+  display: flex;
+  width:70%;
+  flex-direction: column;
+  padding: 2rem;
+  border-bottom: 1px solid #8d868696;
+}
+
+.container-1 .styleDay{
+  font-size: 30px;
+  font-weight: 600;
+  width: max-content;
+  margin: auto;
+  border-bottom: 3px solid #933ea5;
+}
+.container-1 .styleDate{
+  font-size: 15px;
+  color: #989ca1;
+  margin: auto;
+  padding-top: 0.5rem;
+  font-family: 'Roboto', sans-serif;
+}
+.addBtn{
+  position: absolute;
+  border: none;
+  left: 47.5%;
+  width: 60px;
+  cursor: pointer;
+  height: 60px;
+  bottom: 6%;
+  border-radius: 50%;
+  margin: auto;
+  background-color: #e1eaf2;
+  color: #941fac;
+  font-size: 2.4rem;
+  /* transition: 0.1s background-color ease-in; */
+  /* width: 100px; */
+}
+
+.container-2{
+  /* background-color: purple; */
+  width: 70%;
+}
+
+form{
+  position: relative;
+  display: flex;
+  /* background-color: red; */
+  margin-top: 2rem;
+  align-items: center;
+  justify-content: center;
+  height: max-content;
+}
+
+form input{
+  padding: 0.2rem;
+  padding-left: 0.5rem;
+  height: 1.6rem;
+  border: none;
+  width: 250px;
+  background-color: #343a40;
+  outline: none;
+  color: #bbb7b7;
+  border-radius: 5px;
+}
+
+form input::placeholder{
+  /* padding-left: 0.5rem; */
+  font-size: 12px;
+}
+form .taskBtn1{
+  font-size: 2rem;
+  color: rgb(41, 184, 41);
+  font-weight: 400;
+  border: none;
+  cursor: pointer;
+  padding: 0 0.5rem;
+  background: none;
+  
+}
+form .taskBtn2{
+  font-size: 2rem;
+  font-weight: 400;
+  color: rgb(184, 41, 41);
+  border: none;
+  padding: none;
+  cursor: pointer;
+  margin-bottom: 0.2rem;
+  background: none;
+}
+form .addingTask{
+  display: flex;
+  align-items: center;
+}
+.taskItems{
+  /* background-color: red; */
+  padding: 1rem;
+}
+ul{
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+ul .indi{
+  display: flex;
+  padding: 0.6rem;
+  justify-content: center;
+  align-items: center;
+  width: 80%;
+  /* background-color: red; */
+  border-bottom: 1px solid #8d868696;
+}
+
+ul .indi li{
+  font-size: 15px;
+  font-weight: 500;
+}
+.trashCan{
+  background: none;
+  color: rgb(179, 71, 71);
+  font-size: 1rem;
+  box-shadow: none;
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+.indi .check{
+  background:none;
+  color: rgb(76, 194, 76);
+  font-size: 1.5rem;
+  box-shadow: none;
+  border: none;
+  outline: none;
+  cursor: pointer;
 }
